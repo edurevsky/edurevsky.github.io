@@ -1,0 +1,156 @@
+.light {
+  --bg-color: #fafafa;
+  --font-color: #000;
+  --border-color: #111;
+  --alpha: 0.8;
+}
+
+.dark {
+  --bg-color: #222;
+  --font-color: #c9c9c9;
+  --border-color: #aaa;
+  --alpha: 0.4;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  cursor: default;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  padding: 10vh 10vw;
+  max-width: 720px;
+}
+
+h1 {
+  font-size: 38pt;
+}
+
+h2 {
+  font-size: 20pt;
+}
+
+h3 {
+  font-size: 18pt;
+}
+
+p {
+  font-size: 18pt;
+}
+
+button {
+  min-height: 16px;
+}
+
+span, a {
+  position: relative;
+}
+
+span::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 52.5%;
+  left: 6px;
+  bottom: 0;
+  width: 98%;
+}
+
+.name {
+  display: inline-block;
+  font-size: 24pt;
+}
+.name::after {
+  background-color: rgba(197, 130, 204, var(--alpha));
+}
+
+.java::after {
+  background-color: rgba(284, 152, 32, var(--alpha));
+}
+
+.python::after {
+  background-color: rgba(48, 105, 152, var(--alpha));
+}
+
+.database::after {
+  background-color: rgba(166, 166, 166, var(--alpha));
+}
+
+.web::after {
+  background-color: rgba(152, 201, 77, var(--alpha));
+}
+
+.rest::after {
+  background-color: rgba(194, 87, 94, var(--alpha));
+}
+
+.http::after {
+  background-color: rgba(93, 167, 210, var(--alpha));
+}
+
+.html::after {
+  background-color: rgba(179, 131, 35, var(--alpha));
+}
+
+.css::after {
+  background-color: rgba(117, 173, 210, var(--alpha));
+}
+
+.js::after {
+  background-color: rgba(232, 226, 49, var(--alpha));
+}
+
+.react::after {
+  background-color: rgba(0, 255, 255, var(--alpha));
+}
+
+.division {
+  border-top: 1px solid var(--border-color);
+}
+
+#contact, #about-me {
+  margin-top: 5rem;
+}
+
+.btn-small {
+  padding: 4px 8px;
+}
+
+.btn-large {
+  padding: 16px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--font-color);
+  background-color: var(--bg-color);
+  border: 1px solid var(--font-color);
+  border-radius: 4px;
+  transition: background-color 0.25s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: var(--bg-color);
+  background-color: var(--font-color);
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
