@@ -149,6 +149,13 @@ span::after {
   align-items: center;
 }
 
+@media (max-width: 540px) {
+  .intro {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+}
+
 .links {
   display: flex;
   flex-direction: column;
